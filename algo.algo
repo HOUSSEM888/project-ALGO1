@@ -1,0 +1,46 @@
+Algorithme lire_phrase
+  
+  
+    // Initialisation des compteurs
+   VAR longueur_phrase = 0
+    VAR  nombre_mots = 0
+    VAR  nombre_voyelles =0
+
+    
+    BEGIN
+    
+    // parcourir chaque caractère de la phrase 
+    (for let i=0;i<longueur_phrase;i++){
+        var caractère_courant=phrase[i]
+    }
+
+    // Lecture de la phrase caractère par caractère
+WHILE (caractère_courant ≠ '.') DO
+    
+        // Augmenter la longueur de la phrase
+        longueur_phrase = longueur_phrase + 1
+        
+        // Vérifier s'il s'agit d'une voyelle
+        if caractère_courant est une voyelle then
+            nombre_voyelles = nombre_voyelles + 1
+        end if 
+        
+        // Vérifier si c'est un espace pour compter les mots
+        if  caractère_courant = ' ' then
+            nombre_mots = nombre_mots + 1
+        end if
+        
+        // Lire le caractère suivant
+        Lire caractère_courant
+    
+    END_WHILE
+    
+    // Augmenter le compte de mots pour le dernier mot
+    nombre_mots = nombre_mots + 1
+    
+    // Afficher les résultats
+    Read "Longueur de la phrase : ", longueur_phrase
+    Read "Nombre de mots : ", nombre_mots
+   Read "Nombre de voyelles : ", nombre_voyelles
+
+END
